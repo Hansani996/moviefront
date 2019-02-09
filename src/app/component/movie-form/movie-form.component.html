@@ -1,0 +1,71 @@
+
+<div class="container">
+  <div class="row">
+      <select style="width: 60%;height: 10%;margin-top:2%;margin-left: 20%" form-control="cmbMovie"" id="cmbMovieSelect">
+      </select>
+  </div>
+  
+  <div class="row">
+
+    <select style="width: 60%;height: 10%;margin-top:2%;margin-left: 20%" class="form-control" id="cmbMovieSelect">
+      
+        <option>10.30</option>
+        <option>2.30</option>
+        <option>6.00</option>
+      
+    </select>
+</div>
+      <div class="col-sm-md-lg">
+        <div class="red-square">
+          <form style="margin-top: 10%" [formGroup]=" movieForm">
+            <hr style="background-color: rgb(207, 16, 9)">
+            <div class="row">
+              <div class="col">
+              <p>full ticket</p>
+                <select form-control="cmbMovie" id="cmbfullTickt">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+              </div>
+              <div class="col">
+                <p>Half Ticket</p>
+                <select class="form-control" id="cmbHalfTicket" >
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+              </div>
+  
+              <div class="col">
+                <p>Total</p>
+                <input type="text" class="form-control" id="txtTot">
+              </div>
+            </div>
+          </form>
+  
+  
+            <div class="col">
+            <button type="submit" class="btn btn-warning" (click) = "movieform()" style="margin-top: 3%;margin-right: -1%">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div>
+      <router-outlet></router-outlet>
+  </div>
+  
